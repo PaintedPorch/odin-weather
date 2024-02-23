@@ -1,9 +1,126 @@
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
+}
+
+/* titan-one-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./../assets/fonts/titan-one-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(217deg, rgb(140, 219, 250), rgb(114, 175, 255) 70.71%),
+    linear-gradient(127deg, rgba(255, 255, 255, 0.8), rgba(116, 116, 116, 0) 70.71%),
+    linear-gradient(336deg, rgba(255, 255, 255, 0.8), rgba(129, 129, 129, 0) 70.71%);
+    /* background-image: url("./../assets/images/Cloudy.jpeg"); */
+    background-size: 100% 100%;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    background-color: skyblue;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2.5fr 6fr 1fr;
+}
+
+.title-div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 10px solid white;
+}
+
+.title-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 300px;
+    background-color: rgb(138, 138, 138); 
+    border: 1px solid black;
+    border: 7.5px solid rgb(255, 255, 255);
+}
+
+.title {
+    font-family: "Titan One";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 5px 5px black;
+}
+
+.weather-cards {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.searchDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+}
+
+.searchBarDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards {
+    gap: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    min-height: 150px;
+    min-width: 100px;
+    height: 275px;
+    width: 250px;
+    box-shadow: 10px 10px rgb(151, 151, 151);
+}
+
+.footer {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    text-shadow: 1.2px 1.2px black;
+    border-top: 10px solid white;
+}
+
+.footer:hover {
+    cursor: pointer;
 }

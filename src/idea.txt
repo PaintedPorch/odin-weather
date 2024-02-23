@@ -15,3 +15,8 @@ and the temperature down below.
 -Toggle button for White and Black filter.
 
 -Optional: Click on a card to see the data for more specific hours
+-Optional: When the sunny background is in use, change the box shadow
+
+-Make functions general purpose. The function that processes the Search
+should work by entering a button into the function and processing it.
+It should be a general onchange value grabber, not just for that element.
