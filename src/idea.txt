@@ -1,0 +1,17 @@
+Goal: Dynamic Weather App. 
+Functions: 
+-Search for location and get current weather, daily forecast, three day forecast,
+display this in a card like style.
+-Add a toggle button to display in Fahrenheit or Celsius (pick a base value
+and with if statements convert from value A to B)
+-Change the site dependant on what the weather looks like. Can be done with
+images, Giphys, layouts.
+-Use a text entry form element and on change get the entered result. This can
+then be added as the location on the weather API's prompt. Use JSON to process
+the data and display the cards and change the background accordingly.
+
+-The cards will have the time at the top, an icon of the weather in the middle,
+and the temperature down below.
+-Toggle button for White and Black filter.
+
+-Optional: Click on a card to see the data for more specific hours
