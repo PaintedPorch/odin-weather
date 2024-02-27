@@ -18,15 +18,47 @@
                 <input type="text" name="searchBar" id="searchBar" class="searchBar">
             </div>
             <div class="checkbox">
-                <label for="checkbox">Fahrenheit</label>
-                <input type="checkbox" name="fahrenheit" id="fahrenheit">
+                <div class="fahrenheitDiv">
+                    <label for="fahrenheit">Fahrenheit</label>
+                    <input type="radio" name="displayUnit" id="fahrenheit">
+                </div>
+                <div class="celsiusDiv">
+                    <label for="celsius">Celsius</label>
+                    <input type="radio" name="displayUnit" id="celsius">
+                </div>
             </div>
-            
         </div>
         <div class="cards">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card today">
+                <div class="dayTextDiv">
+                    <p class="dayText">Today</p>
+                </div>
+                <div class="weatherSpecs">
+                    <p class="condition"></p>
+                    <p class="temp"></p>
+                    <p class="rainChance"></p>
+                </div>
+            </div>
+            <div class="card tomorrow">
+                <div class="dayTextDiv">
+                    <p class="dayText">Tomorrow</p>
+                </div>
+                <div class="weatherSpecs">
+                    <p class="condition"></p>
+                    <p class="temp"></p>
+                    <p class="rainChance"></p>
+                </div>
+            </div>
+            <div class="card afterTomorrow">
+                <div class="dayTextDiv">
+                    <p class="dayText">In 2 Days</p>
+                </div>
+                <div class="weatherSpecs">
+                    <p class="condition"></p>
+                    <p class="temp"></p>
+                    <p class="rainChance"></p>
+                </div>
+            </div>
         </div>
     </div>
     <a href="https://github.com/PaintedPorch/odin-weather" class="footer">© 2024 - Painted Porch</a>
