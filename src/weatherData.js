@@ -6,6 +6,7 @@ export async function getCondition(location, days) {
     }
     catch(error) {
         console.log(error);
+        alert("Error: Check Spelling / Retry Prompt");
     }
 }
 

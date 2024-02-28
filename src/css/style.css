@@ -1,7 +1,3 @@
-* {
-    /* outline: 1px solid red; */
-}
-
 /* titan-one-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -9,6 +5,10 @@
     font-style: normal;
     font-weight: 400;
     src: url('./../assets/fonts/titan-one-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+    outline: 1px solid red;
 }
 
 html {
@@ -161,7 +161,7 @@ body {
 
 .condition, .temp, .rainChance {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -180,8 +180,6 @@ body {
     font-family: "Titan One", sans-serif;
     text-align: center;
 }
-/* Display Doesn't work well, center the text within the bar and place
-the bar at the top again */
 
 .footer {
     text-decoration: none;
